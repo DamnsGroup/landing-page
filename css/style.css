@@ -6,27 +6,192 @@
 html, body{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 #header-title{
-    font-size: 60px !important;    
+    font-size: 50px !important;    
 }
 p{
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+#logo{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 25px !important;
 }
 
 .header{
     overflow-x: hidden;
-}
-.hero{
-    height: 100vh;
     background-color: #EFEFEF;
+}
+section{
+    overflow-x: hidden;
+}
+
+
+.hero{
+    height: 86vh;
     padding: 0px 170px;
 }
 .hero-img{
     align-items: right;
 }
-section{
-    overflow-x: hidden;
+
+
+nav{
+    height: 100px;
+    z-index: 2;
+    background-color: #EFEFEF;
+}
+#nav-content{
+    padding: 0px 50px 0px 130px;
+}
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.btn-close{
+    background-color: #FFFFFF;
+}
+nav ul{
+    justify-content: space-between !important;
+}
+nav ul li a{
+    font-size: 17px !important;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    transition: 0.5s !important;
+    text-shadow: 0.5px 0.2px black
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:rgb(183, 229, 241);
+    margin: auto;
+    display: block;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: width 0.5s ease;
+    margin-top: -5px;
+}
+nav ul li a:hover{
+    font-size: 18px !important;
+    color: #fff;
+}
+
+#title{
+    font-size: 60px !important;    
+}
+
+
+#projeto-coluna-esquerda{
+    margin-right: 30px;
+}
+
+#redes{
+    margin: 10px 0;
+    flex-wrap: wrap;
+    padding-inline-start: 0px !important;
+}
+#redes li a{
+    font-size: 1.7em;
+    color: #000;
+    margin: 0 5px;
+    display: inline-block;
+}
+#redes li{
+    list-style: none;
+}
+
+#equipe .card{
+    height: auto;
+    border: none;
+}
+
+#redes2{
+    margin: 10px 0;
+    flex-wrap: wrap;
+    padding-inline-start: 0px !important;
+}
+#redes2 li a{
+    font-size: 1.7em;
+    color: #FFF;
+    margin: 0 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+#redes2 li{
+    list-style: none;
+}
+#redes2 li a:hover{
+    transform: translateY(-10px);
+}
+#redes2 li{
+    list-style: none;
+}
+
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1030px) {
+
+}
+@media (max-width: 992px) {
+    nav{
+        height: auto;
+    }
+    #nav-content{
+        padding: 14px 100px 0px 130px;
+    }
+    .hero{
+        padding: 0px 30px;
+    }
+    #title{
+        font-size: 2em !important;    
+    }
+    #projeto-container{
+        padding: 0 !important;
+    }
+    #projeto{
+        padding: 0 !important;
+    }
+}
+@media(max-width: 776px){
+    #title{
+        text-align: center;
+    }
+    #nav-content{
+        padding: 14px 50px 0px 70px;
+    }
+    .hero{
+        padding: 0px 0px;
+    }
+    #sobre-secao{
+        display: flex;
+        justify-content: center;
+    }
+    #header-title{
+        font-size: 2rem !important;    
+    }
+    #botao{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    #projeto-coluna-esquerda{
+        margin-right: 0;
+    }
+    #projeto{
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 444px) {
+    #nav-content{
+        padding: 14px 50px 0px 50px;
+    }
+    #card-projeto{
+        margin: 0 !important;
+    }
 }
