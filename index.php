@@ -98,7 +98,7 @@
                         Segundo dados divulgados pela Agência Brasil, mais de 50% dos incêndios ocorridos em casas ou apartamentos, resultaram de sobrecarga no sistema elétrico. Segundo a Associação Brasileira de Conscientização dos Perigos da Eletricidade (Abracopel), em 2020, foram registrados no país, 583 incêndios por sobrecarga, com 26 mortes. Desse total, 309 incêndios aconteceram em casas e apartamentos, resultado em 23 mortes.</p>
                     </p>
                     <p>
-                        Além disso. apenas em São Paulo, o Corpo de Bombeiros registrou 4.055 casos de acidentes por decorrência de vazamentos de gás GLP (popularmente conhecido como gás de cozinha).
+                        Além disso, apenas em São Paulo, o Corpo de Bombeiros registrou 4.055 casos de acidentes por decorrência de vazamentos de gás GLP (popularmente conhecido como gás de cozinha).
                     </p>
                 </div>
                 
@@ -108,7 +108,7 @@
                         O projeto tem como objetivo evitar que tragédias aconteçam em um espaço onde deve ter paz e tranquilidade. Para isso, nosso produto conta com sensores e outros dispositivos que estão conectados juntamente a um aplicativo mobile e também para desktop. 
                     </p>
                     <p>
-                        Além disso. apenas em São Paulo, o Corpo de Bombeiros registrou 4.055 casos de acidentes por decorrência de vazamentos de gás GLP (popularmente conhecido como gás de cozinha).
+                        <b>Funções</b>: Monitoramento da rede elétrica em cômodos com maior concentração de produtos eletrônicos (eletrodomésticos, computador, televisão etc); Detectar vazamento de gás que pode resultar em um incêndio; Sistema com sensores de movimento para alertar quando sua casa é invadida quando você não está.
                     </p>
                 </div>
             </div>
@@ -119,20 +119,34 @@
             <div class="container">
                 <div class="row justify-content-center" id="projeto-container">
                     <div class="col-12 col-sm-6" id="projeto-coluna-esquerda">
-                        <div class="mb-5" style="height: 360px;" id="card-projeto">
-                            <img src="files/img/card1.png" class="img-fluid w-100">
+                        <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto1">
+                            <div class="col-10 mt-1" id="card-texto">
+                                <h2 class='fw-bold' style="color: #000;">Proteção contra Incêndio</h2>
+                            </div>
+                            <img src="files/img/abajur2.png" class="img-fluid" id="card-imagem2">
+                            <img src="files/img/cozinha.png" class="img-fluid" id="card-imagem1">
                         </div>
-                        <div class="mb-3" style="height: 230px;" id="card-projeto">
-                            <img src="files/img/card2.png" class="img-fluid w-100">
+                        <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto2">
+                            <div class="col-6 mt-1" id="card-texto">
+                                <h2 class='fw-bold' style="color: #000;">Sobrecargas Elétricas</h2>
+                            </div>
+                            <img src="files/img/mao_fio2.png" class="img-fluid" id="card-imagem1">
                         </div>
                     </div>
 
                     <div class="col-12 col-sm-5 mb-5">
-                        <div class="mb-5" style="height: 230px;" id="card-projeto">
-                            <img src="files/img/card3.png" class="img-fluid w-100">
+                        <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto3">
+                            <div class="col-6" id="card-texto">
+                                <h2 class='fw-bold' style="color: #000;">Vazamento de Gás de Cozinha</h2>
+                            </div>
+                            <img src="files/img/gas2.png" class="img-fluid" id="card-imagem1">
                         </div>
-                        <div class="mb-3" style="height: 360px;" id="card-projeto">
-                            <img src="files/img/card4.png" class="img-fluid w-100">
+                        <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto1">
+                            <div class="col-6 mt-1" id="card-texto4">
+                                <h2 class='fw-bold' style="color: #000;">Sensor de Movimento</h2>
+                                <p>Seja avisado caso algum intruso invada sua casa enquanto você está fora!</p>
+                            </div>
+                            <img src="files/img/porta2.png" class="img-fluid" id="card-imagem4">
                         </div>
                     </div>
                 </div>
@@ -144,63 +158,72 @@
             <div class="reveal">
                 <h1 class='fw-bold mb-3'>Nossa Equipe</h1>
             </div>
-            <div class="card-group">
-                <div class="card text-center me-2">
-                    <img class="card-img-top img-fluid" src="files/img/ferrari.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold mb-3">Matheus Ferrari Abrahão</h5>
-                        <p class="card-text fw-bold">Designer Digital</p>
-                        <p class="card-text"><small class="text-muted">Responsável pelo design digital do website, aplicativo mobile e do software para desktop.</small></p>
-                        <ul class="text-center d-flex justify-content-center position-relative" id="redes">
-                            <li><a href="https://www.instagram.com/vicruk_edits/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="https://www.youtube.com/channel/UC8vWyKLaITcUV-2a4JeKlGg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="https://github.com/MatheusFAbr" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                        </ul>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center">
+                        <img class="card-img-top img-fluid" src="files/img/ferrari.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Matheus Ferrari Abrahão</h5>
+                            <p class="card-text fw-bold">Designer Digital</p>
+                            <p class="card-text"><small class="text-muted">Responsável pelo design digital do website, aplicativo mobile e do software para desktop.</small></p>
+                            <ul class="text-center d-flex justify-content-center position-relative" id="redes">
+                                <li><a href="https://www.instagram.com/mtzferrari/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="https://www.linkedin.com/in/matheus-ferrari-abrahão-893b17237/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="https://github.com/MatheusFAbr" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="card text-center mx-2">
-                    <img class="card-img-top img-fluid" src="files/img/yamamoto.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold mb-3">Matheus Yamamoto Dias</h5>
-                        <p class="card-text fw-bold">Programador Mobile</p>
-                        <p class="card-text"><small class="text-muted">Responsável por criar o aplicativo mobile do projeto.</small></p>
-                        <ul class="text-center d-flex justify-content-center position-relative" id="redes">
-                            <li><a href="https://www.instagram.com/matheus_yamas/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="https://www.youtube.com/channel/UC8vWyKLaITcUV-2a4JeKlGg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="https://github.com/yHiroshiz" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                        </ul>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center">
+                        <img class="card-img-top img-fluid" src="files/img/yamamoto.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Matheus Yamamoto Dias</h5>
+                            <p class="card-text fw-bold">Programador Mobile</p>
+                            <p class="card-text"><small class="text-muted">Responsável por criar o aplicativo mobile do projeto.</small></p>
+                            <ul class="text-center d-flex justify-content-center position-relative" id="redes">
+                                <li><a href="https://www.instagram.com/matheus_yamas/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC8vWyKLaITcUV-2a4JeKlGg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="https://github.com/yHiroshiz" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="card text-center mx-2">
-                    <img class="card-img-top img-fluid" src="files/img/leandro.png" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title fw-bold mb-3">Leandro Takeo Oyadomari</h5>
-                    <p class="card-text fw-bold">Programador Back-end</p>
-                    <p class="card-text"><small class="text-muted">Responsável por criar o software do projeto.</small></p>
-                    <ul class="text-center d-flex justify-content-center position-relative" id="redes">
-                            <li><a href="https://www.instagram.com/le.takeo/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="https://www.youtube.com/channel/UC8vWyKLaITcUV-2a4JeKlGg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="https://github.com/takeoya" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                        </ul> 
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center">
+                        <img class="card-img-top img-fluid" src="files/img/leandro.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Leandro Takeo Oyadomari</h5>
+                            <p class="card-text fw-bold">Programador Back-end</p>
+                            <p class="card-text"><small class="text-muted">Responsável por criar o software do projeto.</small></p>
+                            <ul class="text-center d-flex justify-content-center position-relative" id="redes">
+                                    <li><a href="https://www.instagram.com/le.takeo/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                    <li><a href="https://www.linkedin.com/in/leandro-oyadomari-856998231/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                    <li><a href="https://github.com/takeoya" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul> 
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class="card text-center ms-2">
-                    <img class="card-img-top img-fluid" src="files/img/victor.png." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold mb-3">Victor Ryuki Tamezava</h5>
-                        <p class="card-text fw-bold mb-0">Designer Digital</p>
-                        <p class="card-text fw-bold">Programador WEB</p>
-                        <p class="card-text"><small class="text-muted">Responsável pelo design digital do website, aplicativo mobile e do software para desktop.</small></p>
-                        
-                        <ul class="text-center d-flex justify-content-center position-relative" id="redes">
-                            <li><a href="https://www.instagram.com/vicruk_edits/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="https://www.youtube.com/channel/UC8vWyKLaITcUV-2a4JeKlGg" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="https://github.com/VicRuk" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                        </ul>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center">
+                        <img class="card-img-top img-fluid" src="files/img/victor.png." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Victor Ryuki Tamezava</h5>
+                            <p class="card-text fw-bold mb-0">Designer Digital</p>
+                            <p class="card-text fw-bold">Programador WEB</p>
+                            <p class="card-text"><small class="text-muted">Responsável pelo design digital do website, aplicativo mobile e do software para desktop.</small></p>
+                            
+                            <ul class="text-center d-flex justify-content-center position-relative" id="redes">
+                                <li><a href="https://www.instagram.com/vicruk_edits/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="https://www.linkedin.com/in/victor-tamezava/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="https://github.com/VicRuk" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- FOOTER -->
         <footer class="py-3 px-0 position-relative bg-dark" id="footer">
         <ul class="text-center d-flex justify-content-center position-relative" id="redes2">
