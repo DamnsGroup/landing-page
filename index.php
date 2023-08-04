@@ -30,13 +30,13 @@
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid" id="nav-content">
-                <a class="navbar-brand" href="#"><h5 class="fw-bold text-dark" id="logo">DAMNS.</h3></a>
+                <a class="navbar-brand" href="#"><h5 class="fw-bold text-dark" id="logo">DAMNS.</h5></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h3 class="offcanvas-title fw-bold text-black" id="offcanvasNavbarLabel" id="logo">DAMNS.</h3>
+                    <h3 class="htitle offcanvas-title fw-bold text-black" id="offcanvasNavbarLabel">DAMNS.</h3>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                     <div class="offcanvas-body">
@@ -116,7 +116,7 @@
 
         <!-- PROJETO -->
         <div class="container-fluid px-5 mb-5 text-white position-relative" id="projeto">
-            <div class="container">
+            <div class="container pt-5">
                 <div class="row justify-content-center" id="projeto-container">
                     <div class="col-12 col-sm-6" id="projeto-coluna-esquerda">
                         <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto1">
@@ -134,7 +134,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-5 mb-5">
+                    <div class="col-12 col-sm-5 mb-4">
                         <div class="mb-4 position-relative rounded shadow p-3 mb-5" style="background-color: #EFEFEF;" id="card-projeto3">
                             <div class="col-6" id="card-texto">
                                 <h2 class='fw-bold' style="color: #000;">Vazamento de Gás de Cozinha</h2>
@@ -156,14 +156,14 @@
         <!-- EQUIPE -->
         <div class="container-fluid px-5 mt-5 text-dark position-relative mb-3" id="equipe">
             <div class="reveal">
-                <h1 class='fw-bold mb-3'>Nossa Equipe</h1>
+                <h1 class='fw-bold mb-4'>Nossa Equipe</h1>
             </div>
-            <div class="row">
+            <div class="row px-2" id="equipe-conteudo">
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card text-center">
                         <img class="card-img-top img-fluid" src="files/img/ferrari.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold mb-3">Matheus Ferrari Abrahão</h5>
+                            <h5 class="card-title fw-bold mb-3" id="nome">Matheus Ferrari Abrahão</h5>
                             <p class="card-text fw-bold">Designer Digital</p>
                             <p class="card-text"><small class="text-muted">Responsável pelo design digital do website, aplicativo mobile e do software para desktop.</small></p>
                             <ul class="text-center d-flex justify-content-center position-relative" id="redes">
@@ -224,19 +224,98 @@
             </div>
         </div>
         
+        
         <!-- FOOTER -->
-        <footer class="py-3 px-0 position-relative bg-dark" id="footer">
-        <ul class="text-center d-flex justify-content-center position-relative" id="redes2">
-            <li><a href="https://github.com/DamnsGroup" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/damns.projects/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="" target=""><ion-icon name="logo-youtube"></ion-icon></a></li>
-            <li><a href="" target=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-        </ul>
-        <hr class="border border-light border-1 opacity-25">
-        <p class="text-center text-white">© 2023 Damns</p>
-    </footer>
-        </div>
+        <footer class="py-5 px-0 position-relative" id="footer">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5">
+                <div class="col">
+                <a class="text-decoration-none" href="#"><h5 class="fw-bold" id="logo" style="color: #000;">DAMNS.</h5></a>
+                </div>
+
+                <div class="col">
+
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <h5>Section</h5>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <h5>Section</h5>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <h5>Section</h5>
+                </div>
+                
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+            </div>
+            <hr class="border border-light border-1 opacity-25">
+            <ul class="text-center d-flex justify-content-center position-relative" id="redes2">
+                <li><a href="https://github.com/DamnsGroup" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/damns.projects/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="" target=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href="" target=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            
+            <p class="text-center text-white">© 2023 Damns</p>
+        </footer>
         </section>
+    </div>
+        
+        <!--
+        <div class="container bg-dark">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-muted">© 2022</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+            </div>
+
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+            </div>
+
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+            </div>
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        </footer>
+        -->
     </div>
 </body>
 </html>

@@ -20,6 +20,10 @@ p{
     font-family: 'Source Sans 3', sans-serif;
     font-size: 25px !important;
 }
+.htitle{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 30px !important;
+}
 
 .header{
     overflow-x: hidden;
@@ -31,7 +35,7 @@ section{
 
 
 .hero{
-    height: 86vh;
+    height: 90vh;
     padding: 0px 170px;
 }
 .hero-img{
@@ -153,6 +157,10 @@ nav ul li a:hover{
 #equipe .card{
     height: auto;
     border: none;
+}
+
+#footer{
+    overflow-x: hidden;
 }
 
 #redes2{
