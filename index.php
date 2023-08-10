@@ -14,7 +14,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,400;1,700&family=Source+Sans+3:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,400;1,700&family=Source+Sans+3:wght@900&display=swap" rel="stylesheet">
     
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -226,96 +226,44 @@
         
         
         <!-- FOOTER -->
-        <footer class="py-5 px-0 position-relative" id="footer">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5">
-                <div class="col">
-                <a class="text-decoration-none" href="#"><h5 class="fw-bold" id="logo" style="color: #000;">DAMNS.</h5></a>
-                </div>
+        <footer class="py-3 px-0 position-relative align-items-center" id="footer">
+            <div class="container">
+                <div class="row justify-content-center align-items-center py-3">
+                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#"><h5 class="fw-bold" id="logo" style="color: #000;">DAMNS.</h5></a>
+                    </div>
 
-                <div class="col">
+                    <div class="col-12 col-md-1 mb-2">
+                    </div>
 
-                </div>
+                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#sobre" style="color: #000" id="items-footer">SOBRE</a>
+                    </div>
 
-                <div class="col d-flex align-items-center">
-                    <h5>Section</h5>
-                </div>
+                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#projeto" style="color: #000" id="items-footer">PROJETO</a>
+                    </div>
 
-                <div class="col d-flex align-items-center">
-                    <h5>Section</h5>
-                </div>
+                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#equipe" style="color: #000" id="items-footer">EQUIPE</a>
+                    </div>
 
-                <div class="col d-flex align-items-center">
-                    <h5>Section</h5>
+                    <div class="col-12 col-md-3">
+                    </div>
                 </div>
-                
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a>
+                <hr class="border opacity-75 w-100" style="border: 1.5px solid black !important">
             </div>
-            <hr class="border border-light border-1 opacity-25">
-            <ul class="text-center d-flex justify-content-center position-relative" id="redes2">
+
+            <ul class="text-center d-flex justify-content-center position-relative mt-5" id="redes2">
                 <li><a href="https://github.com/DamnsGroup" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
                 <li><a href="https://www.instagram.com/damns.projects/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 <li><a href="" target=""><ion-icon name="logo-youtube"></ion-icon></a></li>
                 <li><a href="" target=""><ion-icon name="logo-twitter"></ion-icon></a></li>
             </ul>
-            
-            <p class="text-center text-white">© 2023 Damns</p>
+            <p class="text-center" id="copyright">© 2023 DAMNS | All Rights Reserved</p>
         </footer>
         </section>
     </div>
-        
-        <!--
-        <div class="container bg-dark">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <p class="text-muted">© 2022</p>
-            </div>
-
-            <div class="col mb-3">
-
-            </div>
-
-            <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-            </div>
-
-            <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-            </div>
-
-            <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-            </div>
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-        </footer>
-        -->
     </div>
 </body>
 </html>
