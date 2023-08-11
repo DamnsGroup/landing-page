@@ -1,64 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,400;1,700&family=Source+Sans+3:wght@900&display=swap" rel="stylesheet">
-    
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    <script src="js/funcoes.js" type="text/javascript"></script>
-    <title>Damns.</title>
-</head>
-
-<body>
-    <div class="container-fluid px-0">
-        <!-- NAV -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid" id="nav-content">
-                <a class="navbar-brand" href="#"><h5 class="fw-bold text-dark" id="logo">DAMNS.</h5></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h3 class="htitle offcanvas-title fw-bold text-black" id="offcanvasNavbarLabel">DAMNS.</h3>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav flex-grow-1 pe-5 overflow-hidden justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close">
-                            <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="#sobre">Sobre</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="#projeto">Projeto</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="#equipe">Equipe</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="#footer">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
+<?php
+include("models/conexao.php");
+include("views/blades/header.php");
+?>      
         <!-- HEADER -->
         <header class="header position-relative start-0 top-0 end-0 px-0">
             <div class="hero position-relative">
@@ -152,6 +95,75 @@
                 </div>
             </div>
         </div>
+    
+
+        <!-- NOTÍCIAS -->
+        <div class="container-fluid p-5 position-relative bg-secondary" id="projeto">
+            <div class="container border rounded mt-5 py-5 mb-5 bg-white col-12 h-100 d-flex flex-column justify-content-center" id="home">
+                <div class="container row justify-content-center">
+                    <?php
+                    $query = mysqli_query($conexao, "SELECT * FROM blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo INNER JOIN blogimg ON blog_blogimg_codigo = blogimg_codigo INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo ORDER BY blog_codigo desc limit 1;");
+                    while($exibe = mysqli_fetch_array($query)){
+                    $Data = new DateTime($exibe[7]);
+                    $stringDate = $Data -> format('d/m/Y, H:i:s');
+                    ?>
+                    <div class="col-md-7 col-sm-12 my-2">
+                        <div class="card-container border rounded shadow-sm h-100 d-flex flex-column justify-content-center">
+                            <div class="row align-items-center justify-content-center m-2">
+                                <div class="card-image col-md-6 mb-2 d-flex flex-column justify-content-center">
+                                    <a href="page.php?idb=<?php echo $exibe[0]?>"><img src="files/img/blog/<?php echo $exibe[10] ?>" class="img-fluid" alt="ImgBlog"></a>
+                                </div>
+                                <div class="card-corpo col-md-6 d-flex flex-column">
+                                    <div class="card-title">
+                                        <a class="text-dark text-decoration-none fw-bold" href="page.php?idb=<?php echo $exibe[0]?>"><?php echo $exibe[5] ?></a>
+                                    </div>
+                                    <div class="card-sobre mb-2">
+                                        <a class="text-dark" href="page.php?idb=<?php echo $exibe[0]?>"><?php echo substr($exibe[6],0,50)."..." ?></a>
+                                    </div>
+                                    <div class="card-usuario">
+                                        <p class="fst-italic fw-light mb-0"><?php echo "Criado por $exibe[13]"?></p>
+                                        <p class="fst-italic fw-light mb-0"><?php echo "$stringDate"?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+                    <div class="col-md-5 col-sm-12 my-2">
+                    <?php
+                    $query = mysqli_query($conexao, "SELECT * FROM blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo INNER JOIN blogimg ON blog_blogimg_codigo = blogimg_codigo INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo ORDER BY blog_codigo desc limit 1,2;");
+                    while($exibe = mysqli_fetch_array($query)){
+                    $Data = new DateTime($exibe[7]);
+                    $stringDate = $Data -> format('d/m/Y, H:i:s');
+                    ?>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="card-container border rounded shadow-sm h-100 d-flex flex-column justify-content-center">
+                                <div class="row align-items-center justify-content-center m-2">
+                                    <div class="card-image2 col-md-6 d-flex flex-column justify-content-center">
+                                        <a href="page.php?idb=<?php echo $exibe[0]?>"><img src="files/img/blog/<?php echo $exibe[10] ?>" class="img-fluid" alt="ImgBlog"></a>
+                                    </div>
+                                    <div class="card-corpo col-md-6 d-flex flex-column">
+                                        <div class="card-title">
+                                            <a class="text-dark text-decoration-none fw-bold" href="page.php?idb=<?php echo $exibe[0]?>"><?php echo $exibe[5] ?></a>
+                                        </div>
+                                        <div class="card-sobre mb-2">
+                                            <a class="text-dark" href="page.php?idb=<?php echo $exibe[0]?>"><?php echo substr($exibe[6],0,50)."..." ?></a>
+                                        </div>
+                                        <div class="card-usuario">
+                                            <p class="fst-italic fw-light mb-0"><?php echo "Criado por $exibe[13]"?></p>
+                                            <p class="fst-italic fw-light mb-0"><?php echo "$stringDate"?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- EQUIPE -->
         <div class="container-fluid px-5 mt-5 text-dark position-relative mb-3" id="equipe">
@@ -224,46 +236,6 @@
             </div>
         </div>
         
-        
-        <!-- FOOTER -->
-        <footer class="py-3 px-0 position-relative align-items-center" id="footer">
-            <div class="container">
-                <div class="row justify-content-center align-items-center py-3">
-                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a class="text-decoration-none" href="#"><h5 class="fw-bold" id="logo" style="color: #000;">DAMNS.</h5></a>
-                    </div>
-
-                    <div class="col-12 col-md-1 mb-2">
-                    </div>
-
-                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a class="text-decoration-none" href="#sobre" style="color: #000" id="items-footer">SOBRE</a>
-                    </div>
-
-                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a class="text-decoration-none" href="#projeto" style="color: #000" id="items-footer">PROJETO</a>
-                    </div>
-
-                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a class="text-decoration-none" href="#equipe" style="color: #000" id="items-footer">EQUIPE</a>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                    </div>
-                </div>
-                <hr class="border opacity-75 w-100" style="border: 1.5px solid black !important">
-            </div>
-
-            <ul class="text-center d-flex justify-content-center position-relative mt-5" id="redes2">
-                <li><a href="https://github.com/DamnsGroup" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/damns.projects/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="" target=""><ion-icon name="logo-youtube"></ion-icon></a></li>
-                <li><a href="" target=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-            </ul>
-            <p class="text-center" id="copyright">© 2023 DAMNS | All Rights Reserved</p>
-        </footer>
-        </section>
-    </div>
-    </div>
-</body>
-</html>
+<?php
+include("views/blades/footer.php");
+?>
