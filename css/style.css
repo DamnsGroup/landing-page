@@ -326,6 +326,13 @@ td{
     #projeto{
         margin-top: 0 !important;
     }
+    #noticias{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #noticia-direita{
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 444px) {
     #nav-content{

@@ -98,8 +98,9 @@ include("views/blades/header.php");
     
 
         <!-- NOTÍCIAS -->
-        <div class="container-fluid p-5 position-relative bg-secondary" id="projeto">
-            <div class="container border rounded mt-5 py-5 mb-5 bg-white col-12 h-100 d-flex flex-column justify-content-center" id="home">
+        <div class="container-fluid p-5 position-relative bg-secondary" id="noticias">
+            <div class="container border rounded mt-5 py-5 mb-5 bg-white col-12 h-100 d-flex flex-column justify-content-center align-items-center" id="home">
+                <h1 class='fw-bold px-2 mb-3'>Principais notícias</h1>
                 <div class="container row justify-content-center">
                     <?php
                     $query = mysqli_query($conexao, "SELECT * FROM blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo INNER JOIN blogimg ON blog_blogimg_codigo = blogimg_codigo INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo ORDER BY blog_codigo desc limit 1;");
@@ -137,7 +138,7 @@ include("views/blades/header.php");
                     $Data = new DateTime($exibe[7]);
                     $stringDate = $Data -> format('d/m/Y, H:i:s');
                     ?>
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center justify-content-center" id="noticia-direita">
                             <div class="card-container border rounded shadow-sm h-100 d-flex flex-column justify-content-center">
                                 <div class="row align-items-center justify-content-center m-2">
                                     <div class="card-image2 col-md-6 d-flex flex-column justify-content-center">
