@@ -177,8 +177,7 @@ nav ul li a:hover{
     object-fit: cover;
 }
 .card-image2 {
-    width: 200px;
-    height: 200px;
+
     object-fit: cover;
 }
 .card-title{
@@ -215,7 +214,11 @@ td{
     border: none;
     background-color: transparent;
     padding: 0;
-  }
+}
+
+#btn-mais{
+    width: 100%;
+}
 
 #footer{
     background-color: #EFEFEF;
@@ -346,5 +349,8 @@ td{
     }
     #card-projeto3 h2{
         font-size: 33px !important;
+    }
+    #imagem-tabela{
+        width: 120px;
     }
 }

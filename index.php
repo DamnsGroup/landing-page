@@ -100,7 +100,7 @@ include("views/blades/header.php");
         <!-- NOTÍCIAS -->
         <div class="container-fluid p-5 position-relative bg-secondary" id="noticias">
             <div class="container border rounded mt-5 py-5 mb-5 bg-white col-12 h-100 d-flex flex-column justify-content-center align-items-center" id="home">
-                <h1 class='fw-bold px-2 mb-3'>Principais notícias</h1>
+                <h1 class='fw-bold px-2 mb-3'>Últimas notícias</h1>
                 <div class="container row justify-content-center">
                     <?php
                     $query = mysqli_query($conexao, "SELECT * FROM blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo INNER JOIN blogimg ON blog_blogimg_codigo = blogimg_codigo INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo ORDER BY blog_codigo desc limit 1;");
@@ -162,6 +162,7 @@ include("views/blades/header.php");
                     <?php } ?>
                     </div>
                 </div>
+                <a href="noticias.php"><button type="button" class="btn btn-lg btn-block reveal" id="btn-mais">Todas as notícias</button></a>
             </div>
         </div>
 

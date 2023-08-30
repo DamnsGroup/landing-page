@@ -1,6 +1,6 @@
 <?php
 include("models/conexao.php");
-include("views/blades/header3.php");
+include("views/blades/header4.php");
 ?>
 <div class="container border rounded mb-5 mt-5 pt-3 ps-3 pb-3 pe-3 bg-white" id="blog">
     <h1 class="fw-bold mb-4">Todas as notícias</h1>
@@ -31,7 +31,7 @@ include("views/blades/header3.php");
             while($exibe = mysqli_fetch_array($query)){
             ?>
         <tr>
-            <td class="d-flex justify-content-center"><img class="img-fluid" src="files/imgs/blog/<?php echo $exibe[10] ?>" width="200"></td>
+            <td class="d-flex justify-content-center"><img class="img-fluid" src="files/img/blog/<?php echo $exibe[10] ?>" width="200" id="imagem-tabela"></td>
             <td><b><?php echo $exibe[5]?></b></td>
             <td><a class="fw-semibold text-dark text-justify" href="page.php?idb=<?php echo $exibe[0]?>"><?php echo substr($exibe[6],0,50)."..." ?></a></td>
         </tr>

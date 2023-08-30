@@ -21,7 +21,7 @@ $idb = $_GET["idb"];
                     while($exibe2 = mysqli_fetch_array($query2)) {
                 ?>
                     <div class='d-flex justify-content-center align-items-center'>
-                        <img src="files/img/blog/<?php echo $exibe2[2]?>" class="img-fluid col-4 mb-4">
+                        <img src="files/img/blog/<?php echo $exibe2[2]?>" class="img-fluid col-10 col-sm-8 col-md-4 mb-4">
                     </div>
                 <?php
                     }
