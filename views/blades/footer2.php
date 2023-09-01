@@ -18,6 +18,10 @@
                     </div>
 
                     <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#home-noticias" style="color: #000" id="items-footer">NOTÍCIAS</a>
+                    </div>
+
+                    <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
                         <a class="text-decoration-none" href="../index.php#equipe" style="color: #000" id="items-footer">EQUIPE</a>
                     </div>
 

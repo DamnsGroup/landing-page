@@ -1,6 +1,6 @@
 <?php
 include("models/conexao.php");
-include("views/blades/header4.php");
+include("views/blades/header3.php");
 $idb = $_GET["idb"];
 ?>
     <div class="container border rounded mt-5 mb-5 pt-3 ps-3 pb-3 pe-3 bg-white" id="blog">

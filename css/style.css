@@ -9,6 +9,16 @@ html, body{
     background-color: #FFFFFF;
     color: #000000;
 }
+.reveal{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px) !important;
+    opacity: 1;
+}
 
 #header-title{
     font-size: 45px !important;    
@@ -25,6 +35,11 @@ p{
 #logo{
     font-family: 'Source Sans 3', sans-serif;
     font-size: 25px !important;
+}
+#blogo{
+    font-size: 70px !important;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #000;
 }
 .htitle{
     font-family: 'Source Sans 3', sans-serif;
@@ -43,6 +58,21 @@ section{
 .hero{
     height: 90vh;
     padding: 0px 170px;
+}
+#hero_content{
+    position: relative;
+    opacity: 100;
+    animation: reveal 1s ease;
+}
+@keyframes reveal{
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 100;
+        transform: translateY(0px);
+    }
 }
 .hero-img{
     align-items: right;
@@ -95,6 +125,12 @@ nav ul li a:hover{
     font-size: 60px !important;    
 }
 
+#sobrenos{
+    min-height: 75vh;
+}
+#sobrenos-text{
+    padding: 0 200px 0 200px;
+}
 
 #projeto-coluna-esquerda{
     margin-right: 30px;
@@ -190,7 +226,7 @@ nav ul li a:hover{
 .card-usuario p {
     font-size: 14px;
 }
-#home{
+#home-noticias{
     min-height: 75vh;
 }
 #blog{
@@ -336,6 +372,17 @@ td{
     #noticia-direita{
         margin-bottom: 20px;
     }
+    #sobrenos{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    #sobrenos-text{
+        padding: 0 !important;
+    }
+    #sobrenos-text p{
+        font-size: 15px;
+        padding: 0 !important;
+    }
 }
 @media (max-width: 444px) {
     #nav-content{
@@ -352,5 +399,24 @@ td{
     }
     #imagem-tabela{
         width: 120px;
+    }
+    #login{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    #blogo{
+        font-size: 50px !important;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    #sobrenos{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    #sobrenos-text{
+        padding: 0 !important;
+    }
+    #sobrenos-text p{
+        font-size: 15px;
+        padding: 0 !important;
     }
 }

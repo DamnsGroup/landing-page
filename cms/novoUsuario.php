@@ -4,7 +4,7 @@ include("../views/blades/header2.php");
 ?>
 <div class="container p-5 mt-5 mb-5 rounded bg-white" id="login">
     <div class="row d-flex justify-content-center">
-        <div class="col-10">
+        <div class="col-12 col-sm-10">
             <div class="card mb-3">
                 <div class="card-body">
                     <h3 class="fw-bold">Cadastrar Usuário</h3>

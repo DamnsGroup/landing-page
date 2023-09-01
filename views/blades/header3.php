@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid" id="nav-content">
-                <a class="navbar-brand" href="../index.php"><h5 class="fw-bold text-dark" id="logo">DAMNS.</h5></a>
+                <a class="navbar-brand" href="index.php"><h5 class="fw-bold text-dark" id="logo">DAMNS.</h5></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,16 +42,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav flex-grow-1 pe-5 overflow-hidden justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close">
                             <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#sobre">Sobre</a>
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="index.php#sobre">Sobre</a>
                             </li>
                             <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#projeto">Projeto</a>
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="index.php#projeto">Projeto</a>
                             </li>
                             <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#equipe">Equipe</a>
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="index.php#equipe">Equipe</a>
                             </li>
                             <li class="nav-item px-1">
-                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#footer">Contato</a>
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="#">Notícias</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="index.php#footer">Contato</a>
                             </li>
                         </ul>
                     </div>

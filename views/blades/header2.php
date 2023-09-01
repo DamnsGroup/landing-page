@@ -51,6 +51,9 @@
                                 <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#equipe">Equipe</a>
                             </li>
                             <li class="nav-item px-1">
+                                <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../noticias.php">Notícias</a>
+                            </li>
+                            <li class="nav-item px-1">
                                 <a class="fw-semibold nav-link active text-dark" aria-current="page" href="../index.php#footer">Contato</a>
                             </li>
                         </ul>
