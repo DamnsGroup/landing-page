@@ -16,3 +16,24 @@ function reveal(){
         }
     }
 }
+
+const video2 = document.getElementById('#video2');
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+};
+
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video2.play();
+      } else {
+        video2.pause();
+      }
+    });
+}
+
+const observer = new IntersectionObserver(handleIntersection, options);
+const sectionToWatch = document.querySelector('#home');
+observer.observe(sectionToWatch);

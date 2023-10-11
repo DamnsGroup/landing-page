@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center py-3">
                     <div class="col-12 col-md-2 mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a class="text-decoration-none" href="#"><h5 class="fw-bold" id="logo" style="color: #000;">DAMNS.</h5></a>
+                        <a class="text-decoration-none" href="#"><img src="files/img/logo.png" class="img-fluid col-2 col-sm-1 col-md-5 col-lg-4" style="filter: invert(100%);"></a>
                     </div>
 
                     <div class="col-12 col-md-1 mb-2">

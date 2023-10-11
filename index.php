@@ -7,12 +7,14 @@ include("views/blades/header.php");
             <div class="hero position-relative">
                 <div class="h-100 row align-items-center position-relative" id="hero_content">
                     <div class="container-fluid align-items-center col-9 col-sm-7 col-md-5 position-relative">
-                        <h3 class="fw-bold fs-1 mb-3" id="header-title">A segurança que o seu lar precisa!</h3>
+                        <h3 class="fw-bold fs-1 mb-3" id="header-title">ForGated<br>A segurança que o seu lar precisa!</h3>
                         <p class="text-secondary">ForGated pronto para proteger sua casa.</p>
-                        <a href="#sobre" class="text-center"><button type="button" class="btn btn-primary btn-lg btn-block btn-dark fw-bold">Saiba Mais!</button></a>
                     </div>
-                    <div class="container-fluid align-items-right col-10 col-sm-7 col-md-6">
-                        <img class="hero-img img-fluid position-relative" src="files/img/house3.png">
+                    <div class="container-fluid align-items-right col-10 col-sm-7 col-md-7">
+                        <video class="hero-img img-fluid mb-1 position-relative" autoplay loop muted id="video1">
+                            <source src="files/video.webm" type="video/webm">
+                            Seu navegador não suporta o formato de vídeo WebM.
+                        </video>
                     </div>
                 </div>
             </div>     
@@ -42,8 +44,10 @@ include("views/blades/header.php");
                         <a href="#sobre" class="text-center"><button type="button" class="btn btn-primary btn-lg btn-block btn-dark fw-bold mb-3">Saiba Mais!</button></a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-6 col-12">
-                    <img src="files/img/itens.png" class="img-fluid">
+                <div class="col-lg-7 col-md-7 col-sm-6 col-12 container-fluid">
+                    <video autoplay muted loading="lazy" class="hero_video" width="100%" id="video2">
+                        <source src="files/animacaologo.mp4" type="video/mp4" class="img-fluid">
+                    </video>
                 </div>
             </div>
         </div>
@@ -61,7 +65,7 @@ include("views/blades/header.php");
                     </p>
                 </div>
                 
-                <div class="container" id="secao1">
+                <div class="container reveal" id="secao1">
                     <h1 class='fw-bold mb-3'>Objetivo do projeto</h1>
                     <p class="reveal">
                         O projeto tem como objetivo evitar que tragédias aconteçam em um espaço onde deve ter paz e tranquilidade. Para isso, nosso produto conta com sensores e outros dispositivos que estão conectados juntamente a um aplicativo mobile e também para desktop. 
