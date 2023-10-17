@@ -23,6 +23,9 @@ html, body{
 #header-title{
     font-size: 45px !important;    
 }
+#header-title b{
+    font-family: 'Inter';
+}
 h1{
     word-wrap: break-word; 
     max-width: 100%;
@@ -126,6 +129,9 @@ nav ul li a:hover{
 
 #title{
     font-size: 60px !important;    
+}
+#title b{
+    font-family: 'Inter';
 }
 
 #sobrenos{

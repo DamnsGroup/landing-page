@@ -7,7 +7,7 @@ include("views/blades/header.php");
             <div class="hero position-relative">
                 <div class="h-100 row align-items-center position-relative" id="hero_content">
                     <div class="container-fluid align-items-center col-9 col-sm-7 col-md-5 position-relative">
-                        <h3 class="fw-bold fs-1 mb-3" id="header-title">ForGated<br>A segurança que o seu lar precisa!</h3>
+                        <h3 class="fw-bold fs-1 mb-3" id="header-title"><b>ForGated</b><br>A segurança que o seu lar precisa!</h3>
                         <p class="text-secondary">ForGated pronto para proteger sua casa.</p>
                     </div>
                     <div class="container-fluid align-items-right col-10 col-sm-7 col-md-7">
@@ -39,7 +39,7 @@ include("views/blades/header.php");
         <div class="container-fluid px-0 text-white position-relative" id="home">
             <div class="row align-items-center mb-0 flex-sm-row-reverse">
                 <div class="col-lg-5 col-md-5 col-sm-6 col-12 p-5">
-                    <h2 class="reveal fw-bold my-3 text-dark fs-1" id="title">Saiba mais sobre o nosso Projeto: ForGated</h3>
+                    <h2 class="reveal fw-bold my-3 text-dark fs-1" id="title">Saiba mais sobre o nosso Projeto: <b>ForGated</b></h3>
                     <div id="botao"> 
                         <a href="#sobre" class="text-center"><button type="button" class="btn btn-primary btn-lg btn-block btn-dark fw-bold mb-3">Saiba Mais!</button></a>
                     </div>
